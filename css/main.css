@@ -32,17 +32,18 @@ header .logo {
 
 section#contents {
   margin-top: 80px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 section#contents .inner {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2%;
 }
 
 section#contents a.content {
   display: block;
+  margin-bottom: 20px;
 }
 
 section#contents a.content:nth-child(5n+1) {
@@ -85,3 +86,20 @@ footer .copyright {
   text-align: center;
 }
 
+
+
+/* 모바일 및 태블릿 PC 레이아웃 */
+@media screen and (max-width:1079px) {
+  section#contents a.content:nth-child(3n+1) {
+    flex: 1 1 100%;
+  }
+
+  section#contents a.content:nth-child(3n+2) {
+    flex: 1 1 48%;
+  }
+
+  section#contents a.content:nth-child(3n+3) {
+    flex: 1 1 48%;
+  }
+
+}
