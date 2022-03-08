@@ -32,43 +32,42 @@ header .logo {
 
 section#contents {
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 section#contents .inner {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2%;
+  gap: 20px;
 }
 
 section#contents a.content {
   display: block;
-  margin-bottom: 20px;
 }
 
 section#contents a.content:nth-child(5n+1) {
   background-color: pink;
-  flex: 1 1 49%;
+  width: calc((100% - 20px) / 2);
 }
 
 section#contents a.content:nth-child(5n+2) {
   background-color: skyblue;
-  flex: 1 1 49%;
+  width: calc((100% - 20px) / 2);
 }
 
 section#contents a.content:nth-child(5n+3) {
   background-color: palegoldenrod;
-  flex: 1 1 32%;
+  width: calc((100% - 40px) / 3);
 }
 
 section#contents a.content:nth-child(5n+4) {
   background-color: palegreen;
-  flex: 1 1 32%;
+  width: calc((100% - 40px) / 3);
 }
 
 section#contents a.content:nth-child(5n) {
   background-color: paleturquoise;
-  flex: 1 1 32%;
+  width: calc((100% - 40px) / 3);
 }
 
 
@@ -90,16 +89,8 @@ footer .copyright {
 
 /* 모바일 및 태블릿 PC 레이아웃 */
 @media screen and (max-width:1079px) {
-  section#contents a.content:nth-child(3n+1) {
-    flex: 1 1 100%;
-  }
-
-  section#contents a.content:nth-child(3n+2) {
-    flex: 1 1 48%;
-  }
-
-  section#contents a.content:nth-child(3n+3) {
-    flex: 1 1 48%;
+  section#contents a.content {
+    width: calc((100% - 20px) / 2);
   }
 
 }
