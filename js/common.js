@@ -19,12 +19,9 @@ $(window).resize(thumbHeight);
 
 
 // 요소 AOS 일괄 적용
-AOS.init();
+AOS.init({
+  disable: false, // 'phone', 'tablet', 'mobile'
+});
 // $(document).ready(function () {
-//   let $item = document.getElementsByClassName('content')
-//   console.log($item);
-//   $item.setAttribute('data-aos', 'fade-up')
-// });
-// $item.attr({
-//   'data-Aos': 'fade-up'
+//   $('.content').attr('data-aos', 'fade-up')
 // });
