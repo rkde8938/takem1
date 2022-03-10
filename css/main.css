@@ -19,12 +19,12 @@ header{
 }
 
 header .inner {
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
 header a {
-  /* float: right; */
+  float: right;
 }
 
 header .logo {
