@@ -4,11 +4,12 @@ thisYear.textContent = new Date().getFullYear(); // 현재의 년도 (2022)
 
 
 // 썸네일 세로 사이즈 조절
-const thumbHeight = function () {
-  var winWidth = $(window).width();
-  var thumbWidth = $('.content').width();
-  $('.content').height(thumbWidth * 0.666);
-};
+let thumbHeight = function () {
+    $('.content').each(function () {
+    let thumbWidth = $(this).width();
+    $(this).height(thumbWidth * 0.666)
+  });
+}
 
 thumbHeight();
 $(window).resize(thumbHeight);

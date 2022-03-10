@@ -93,4 +93,15 @@ footer .copyright {
     width: calc((100% - 20px) / 2);
   }
 
+  section#contents a.content:nth-child(5n+3) {
+    width: calc((100% - 20px) / 2);
+  }
+
+  section#contents a.content:nth-child(5n+4) {
+    width: calc((100% - 20px) / 2);
+  }
+
+  section#contents a.content:nth-child(5n) {
+    width: calc((100% - 20px) / 2);
+  }
 }
