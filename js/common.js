@@ -20,7 +20,7 @@ $(window).resize(thumbHeight);
 
 // 요소 AOS 일괄 적용
 AOS.init({
-  disable: false, // 'phone', 'tablet', 'mobile'
+  disable: 'mobile',
 });
 // $(document).ready(function () {
 //   $('.content').attr('data-aos', 'fade-up')
