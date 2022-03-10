@@ -7,9 +7,18 @@ thisYear.textContent = new Date().getFullYear(); // 현재의 년도 (2022)
 let thumbHeight = function () {
     $('.content').each(function () {
     let thumbWidth = $(this).width();
-    $(this).height(thumbWidth * 0.666)
+    $(this).height(thumbWidth * 0.666);
+    // $(this).attr('data-aos', 'fade-in') 
   });
 }
 
 thumbHeight();
 $(window).resize(thumbHeight);
+
+
+// 요소 AOS 일괄 적용
+
+AOS.init();
+$('.content').attr({
+  'data-Aos': 'fade-up'
+});
