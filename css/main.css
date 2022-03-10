@@ -23,6 +23,10 @@ header .inner {
   align-items: center;
 }
 
+header a {
+  float: right;
+}
+
 header .logo {
   width: 60px;
 }
@@ -107,6 +111,14 @@ footer .copyright {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+  }
+
+  section#contents a.content:nth-child(5n+1) {
+    width: calc((100% - 10px) / 2);
+  }
+
+  section#contents a.content:nth-child(5n+2) {
+    width: calc((100% - 10px) / 2);
   }
 
   section#contents a.content {
