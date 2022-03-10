@@ -112,9 +112,9 @@ footer address {
   section#contents .inner {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5px;
+    gap: 3px;
   }
 
   section#contents a.content {
-    width: calc((100% - 5px) / 2) !important;
+    width: calc((100% - 3px) / 2) !important;
   }
