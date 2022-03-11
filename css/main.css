@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  background: #000;
 }
 
 .inner {
@@ -25,7 +26,8 @@ header .inner {
 }
 
 header a {
-  float: right;
+  /* float: right; */
+  z-index: 1000000;
 }
 
 header .logo {
@@ -37,7 +39,6 @@ header .logo {
 
 section#contents {
   margin-top: 80px;
-  margin-bottom: 100px;
 }
 
 section#contents .inner {
@@ -86,11 +87,13 @@ section#contents a.content img {
 /* footer */
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 20px 0;
+  color: #aaa;
+  font-size: 12px;
 }
 
 footer .copyright,
@@ -100,6 +103,10 @@ footer address {
   margin-bottom: 10px;
 }
 
+footer a {
+ text-decoration: none;
+ color:#aaa
+}
 
 
 
