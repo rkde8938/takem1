@@ -18,6 +18,7 @@ header{
   height: 80px;
   width: 100%;
   top: 0;
+  z-index: 1000000;
 }
 
 header .inner {
@@ -27,7 +28,6 @@ header .inner {
 
 header a {
   /* float: right; */
-  z-index: 1000000;
 }
 
 header .logo {
@@ -38,7 +38,7 @@ header .logo {
 /* contents */
 
 section#contents {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 section#contents .inner {
@@ -117,11 +117,9 @@ footer a {
   }
 
   section#contents .inner {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3px;
+    gap: 10px;
   }
 
   section#contents div.content {
-    width: calc((100% - 3px) / 2) !important;
+    width: 100% !important;
   }
